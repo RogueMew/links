@@ -5,7 +5,7 @@
   z-index: -1;              
 
   
-  background-image: url(./images/IMG_5499.jpg);
+  background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
 
