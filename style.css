@@ -1,13 +1,18 @@
 #Background::before{
-  content: '';
-            
-  inset: 0;                 
-  z-index: -1;              
+    content: '';
 
-  position: fixed;
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-position: center;
+    inset: 0;                 
+    z-index: -1;              
+
+    position: fixed;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+
+    -webkit-background-size: cover;
+    background-attachment: scroll;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 html, body{
@@ -117,6 +122,4 @@ body{
     max-width: 15em;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-
-    filter: blur(1px);
 }
