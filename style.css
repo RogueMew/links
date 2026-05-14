@@ -1,13 +1,9 @@
-#Background::before{
-  content: '';
-            
-  inset: 0;                 
-  z-index: -1;              
+#Background{
 
-  position: fixed;
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 html, body{
