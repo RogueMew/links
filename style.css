@@ -1,10 +1,5 @@
-#Background::before{
-    content: '';
-
-    inset: 0;                 
-    z-index: -1;              
-
-    position: sticky;
+#Background{
+    background-attachment: scroll;
     background-image: var(--bg-image);
     background-position: center;
 }
