@@ -1,96 +1,116 @@
 #Background::before{
   content: '';
-  position: fixed;          
+            
   inset: 0;                 
   z-index: -1;              
 
-  
+  position: fixed;
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
-
-  filter: blur(10px) brightness(75%);
-
-  transform: scale(1.09);
 }
 
-.MainBody{
-    margin: auto auto 1rem auto;
-    padding-top: 5rem;
 
-    max-width: 100rem;
 
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    text-align: center;
-
-}
-
-.MainBody #UserName{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    font-weight: 700;
-
-    border-radius: 1rem;
-
-    margin: 0.5, auto, 1rem, auto
-}
-
-.MainBody #ProfilePic{
-    border-radius: 2.5rem;
-
-    width: auto;
-    
-    max-width: 240px;
-    max-height: 240px;
-}
-
-.linkList{
+body{
     display: flex;
-    align-items: center;
     flex-direction: column;
-
-    margin: 1em;
-    margin-top: 3em;
-
-    text-align: center;
-}
-
-.linkList ul{
-    padding-inline-start: 0px;
-    text-align: start;
-    margin: 0px;
-}
-
-.linkList li{
-    margin: 1em;
-    border-radius: 1em;
-
-    list-style-type: none;
-    background-color: white;
-}
-
-.linkList li a{
-    display: flex;
     align-items: center;
+
+    color: rgb(37, 37, 37);
+
+}
+
+.topPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1em;
+    width: 20em;
+
+    margin-top: 7em;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+
+    background-color: hsla(0, 0%, 100%, 0.5);
+    backdrop-filter: blur(3px);
+
+}
+
+
+
+#ProfilePic{
+    max-width: 15em;
+    opacity: 100%;
+    border-radius: 2.5em;
+}
+
+#UserName{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(37, 37, 37);
+    font-weight: 900;
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+#description{
+    font-size: larger;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+.quick{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+#quickSocialsLink{
+    margin: 0 0.5em;
+    padding: 0.5em;
+    border-radius: 15px;
+
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+
+}
+
+#icon{
+    max-width: 3em;
+}
+
+.embededPosts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1em;
+    border-radius: 15px;
+    width: 17em;
+    max-width: 20em;
     
-    padding: 0.25em 0px 0.25em 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 
-    width: 10em;
-
-    text-decoration: none;
-    color: black;
-    font-size: 1.5em;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    backdrop-filter: blur(3px);
 }
 
-.linkList #icon{
-    max-width: 1.25em;
-    max-height: 1.25em;
-    margin-right: 1em;
+.embededPosts p{
+    margin-top: 0;
+    font-size: 1.25em;
+    font-weight: 600;
+    font-family: serif
 }
-.linkList #linkHeader{
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5em;
+
+.embededPosts img{
+    max-width: 15em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }

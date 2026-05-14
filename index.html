@@ -6,58 +6,43 @@
 </head>
 
 <html>
+    <script src="index.js"></script>
     <body id="Background" >
-        <div class="MainBody">
+        <div class="topPart">
             <img id="ProfilePic" src="./images/IMG_4628.jpg">
-            <script>
-                window.onload = function(){
-                    let element = document.getElementById("Background")
-                    let darkImages = ["./images/darkImages/IMG_4726.jpg", "./images/darkImages/IMG_4735.jpg", "./images/darkImages/IMG_4868.jpg", 
-                                      "./images/darkImages/IMG_4878.jpg", "./images/darkImages/IMG_4882.jpg", "./images/darkImages/IMG_8296.jpg"
-                                    ]
-                    
-                        let lightImages = ["./images/lightImages/IMG_5499.jpg", "./images/lightImages/IMG_5748.jpg", "./images/lightImages/IMG_6284.jpg", 
-                                           "./images/lightImages/IMG_6421.jpg", "./images/lightImages/IMG_6495.jpg", "./images/lightImages/IMG_6510.jpg", 
-                                           "./images/lightImages/IMG_6552.jpg"    
-                                        ]
-                    let hour = new Date().getHours();
-                    
-                    if (hour < 18){
-                        let randomImage = lightImages[Math.floor(Math.random() * lightImages.length)]
-                        element.style.setProperty('--bg-image', `url(${randomImage})`)
-
-                    }else{
-                        let randomImage = darkImages[Math.floor(Math.random() * darkImages.length)]
-                        console.log(randomImage)
-                        element.style.setProperty('--bg-image', `url(${randomImage})`)
-                    }
-
-
-                }
-            </script>
-            <div id="UserName">
-                @RogueMew
-            </div>
+            <p id="UserName">
+                RogueMew
+            </p>
+            <p id="description">
+                Themepark Photography and More
+            </p>
         </div>
 
-        <div class="linkList">
-            <div id="linkHeader">
-                Where to Find Me
-            </div>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/roguemew/" >
-                        <img src="./images/svg/instagram-svgrepo-com.svg" id="icon">
-                        Instagram
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/@roguemew"> 
-                        <img src="./images/svg/tiktok-svgrepo-com.svg" id="icon">
-                        TikTok
-                    </a>
-                </li>
+        <div class="quickLinks"> 
+            <ul class="quick">
+                <a href="" id="quickSocialsLink">
+                    <li>
+                        <img src="images/svg/instagram-svgrepo-com.svg" id="icon">
+                    </li>
+                </a>
+                
+                <a href="" id="quickSocialsLink">
+                    <li>
+                        <img src="images/svg/tiktok-svgrepo-com.svg" id="icon">
+                    </li>
+                </a>
             </ul>
         </div>
-    </body>       
+
+        <div class="embededPosts">
+            <p>Latest Post on Instagram</p>
+            <a href="https://www.instagram.com/p/DYSsXdoidLe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+                <img src="images/IMG_4130.jpg">
+            </a>
+
+        </div>
+
+    </body>    
+    <footer style="background-color: rgb(48, 119, 51);">
+    </footer>   
 </html>
