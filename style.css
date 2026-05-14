@@ -2,12 +2,14 @@
     background-attachment: scroll;
     background-image: var(--bg-image);
     background-position: center;
+    background-size: cover;
 }
 
-html, body{
+body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    min-width: 100%;
 }
 
 body{
