@@ -118,4 +118,6 @@ body{
     max-width: 15em;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+
+    filter: blur(1px);
 }
