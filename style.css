@@ -6,13 +6,7 @@
 
     position: fixed;
     background-image: var(--bg-image);
-    background-size: cover;
     background-position: center;
-
-    -webkit-background-size: cover;
-    background-attachment: scroll;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
 }
 
 html, body{
