@@ -4,7 +4,7 @@
     inset: 0;                 
     z-index: -1;              
 
-    position: fixed;
+    position: sticky;
     background-image: var(--bg-image);
     background-position: center;
 }
