@@ -2,6 +2,8 @@
     font-family: 'Times New Roman', Times, serif;
     color: rgb(0,0,0);
 
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -16,8 +18,8 @@
 body{
     margin: 0;
     padding: 0;
-    min-height: 200vh;
-    min-width: 100%;
+    width: 100lvw;
+    height: 100lvh;
 
     display: flex;
     flex-direction: column;
