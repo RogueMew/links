@@ -2,11 +2,8 @@
     font-family: 'Times New Roman', Times, serif;
     color: rgb(0,0,0);
 
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
-
 
 #Background{
     background-attachment: fixed;
@@ -19,7 +16,6 @@ body{
     margin: 0;
     padding: 0;
     width: 100lvw;
-    height: 100lvh;
 
     display: flex;
     flex-direction: column;
