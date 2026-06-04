@@ -1,9 +1,5 @@
-function randomItemfromList(list){
-    return list[Math.floor(Math.random() * length(list))]
+function randomItemfromList(list) {
+  return list[Math.floor(Math.random() * length(list))];
 }
 
-
-
-window.onload = function(){
-    let listofSayings = [] 
-}
+window.onload = function () {};
